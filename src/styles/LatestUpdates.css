@@ -1,232 +1,284 @@
-.card{
-    display: flex;
+.card {
+  display: flex;
   flex-direction: column;
 }
 
-.score-card{
-    color: white;
-    display: flex;
-    gap: 10px;
-    justify-content: start;
-    align-items: center;
-    position: relative;
-     
+.score-card {
+  color: white;
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+  position: relative;
 }
-.mid{
+.mid {
   display: flex;
   justify-content: space-between;
 }
-.score-card-head{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    display: none;
+.score-card-head {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: none;
 }
 .latest-updates {
-    background-color: black;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 24px;
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  position: relative;
+  z-index: 2;
 }
 
 .title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: transparent;
-    background: linear-gradient(90deg, #ff00c1, #00fff9);
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: transparent;
+  background: linear-gradient(90deg, #ff00c1, #00fff9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: "Orbitron", sans-serif;
 }
 
 .updates-container {
-    width: 100%;
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .update-card {
   background: linear-gradient(0deg, rgba(9, 9, 16, 0.98), rgba(0, 0, 0, 0.95));
-    color: white;
-    padding: 16px;
-    border: 1px solid #aaaaaa21;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    min-width: 500px;
+  color: white;
+  padding: 16px;
+  border: 1px solid #aaaaaa21;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 500px;
+  opacity: 0.6;
 }
 
 .update-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.cricket-score{
+.cricket-score {
   padding: 5px;
   border-radius: 5px;
-   background-color:#1c1c1c9d;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  background-color: #1c1c1c9d;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.cricket-end{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.cricket-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.over{
-    font-size: 13px;
+.over {
+  font-size: 13px;
 }
 
-.runs{
-    font-weight: bolder;
+.runs {
+  font-weight: bolder;
 }
 
 .sport {
-    font-size: 18px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .view-more {
-    background: linear-gradient(90deg, #ff00c1, #00fff9);
-    margin-top: 20px;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 0.9rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  background: linear-gradient(90deg, #ff00c1, #00fff9);
+  margin-top: 20px;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .view-more:hover {
-    opacity: 0.9;
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 255, 249, 0.3);
+  opacity: 0.9;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 249, 0.3);
 }
 
 .time {
-    font-size: 14px;
-    color: #aaa;
+  font-size: 14px;
+  color: #aaa;
 }
 
 .match {
-    font-size: 16px;
-    font-weight: bold;
-    display: flex;
-    align-items: baseline;
-    gap:10px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
 }
 
 .venue {
-    font-size: 13px;
-    color: #aaa;
+  font-size: 13px;
+  color: #aaa;
 }
 
 .score {
   padding: 5px;
   border-radius: 5px;
-   background-color:#1c1c1c9d;
-    font-size: 20px;
-    font-weight: bolder;
-     
+  background-color: #1c1c1c9d;
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 .winner {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 8px;
 }
 
-.Tba{
-    width: 300px;
-    margin-top: 10px;
-    text-align: center;
-    border-radius: 10px;
-    padding: 3px;
-    background-color: #2f2f2f9d;
-    color:white;
+.Tba {
+  width: 300px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 3px;
+  background-color: #2f2f2f9d;
+  color: white;
 }
 
-.on-going{
-    font-size: 14px;
-    padding: 5px;
+.on-going {
+  font-size: 14px;
+  padding: 5px;
   border-radius: 5px;
   font-weight: bold;
-   background-color:#1c1c1c9d;
+  background-color: #1c1c1c9d;
 }
 
 .lime {
-    color: lime;
+  color: lime;
 }
 
 .pink {
-    color: pink;
+  color: pink;
 }
 
 .yellow {
-    color: yellow;
+  color: yellow;
 }
 
-.red{
-    color: #ff00c1;
+.red {
+  color: #ff00c1;
 }
 
-.blue{
-    color: blue;
+.blue {
+  color: blue;
 }
 
-@media (max-width:749px) {
-    .update-card{
-        font-size: 13px;
-    }
-    .sport{
-        font-size: 13px;
-    }
-    .match{
-        font-size: 11px;
-    }
-    .winner{
-        font-size: 12px;
-    }
-    .cricket-score{
-        font-size: 13px;
-    }
-    .score{
-        display: flex;
-        text-align: center;
-        width: 54px;
-        font-size: 13px;
-    }
-    .on-going{
-        font-size: 13px;
-    }
-    .update-card{
-        min-width: 200px;
-    }
-    .Tba{
-        width: 250px;
-    }
-    .title{
-        margin-top: 20px;
-        font-size: 2rem;
-    }
-    .venue{
-        display: none;
-    }
+@media (max-width: 749px) {
+  .update-card {
+    font-size: 13px;
+  }
+  .sport {
+    font-size: 13px;
+  }
+  .match {
+    font-size: 11px;
+  }
+  .winner {
+    font-size: 12px;
+  }
+  .cricket-score {
+    font-size: 13px;
+  }
+  .score {
+    display: flex;
+    text-align: center;
+    width: 54px;
+    font-size: 13px;
+  }
+  .on-going {
+    font-size: 13px;
+  }
+  .update-card {
+    min-width: 200px;
+  }
+  .Tba {
+    width: 250px;
+  }
+  .title {
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+  .venue {
+    display: none;
+  }
+}
+
+/* animation */
+.marqueeContainer {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  opacity: 0.7;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.marquee {
+  display: flex;
+  width: 200%; /* Double width to prevent gaps */
+  animation: scroll 27s linear infinite;
+}
+
+.marquee span {
+  font-size: 10rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 1rem;
+  background: linear-gradient(90deg, #ff00c1, #00fff9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0.15;
+  white-space: nowrap;
+  padding-right: 4rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  } /* Adjust to half width for seamless loop */
+}
+
+@media (max-width: 768px) {
+  .marquee span {
+    font-size: 6rem;
+    letter-spacing: 0.5rem;
+  }
 }

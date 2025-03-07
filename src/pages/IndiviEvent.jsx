@@ -186,6 +186,26 @@ const eventsData = [
         "Event committee/referee decisions are final"
       ],
       registrationLink:"https://bit.ly/Campeon_badminton"
+    },
+    {
+      id: 8,
+      name: "Sepak Takraw",
+      details: "Traditional Southeast Asian sport combining elements of volleyball, football, and martial arts.",
+      date: "March 8-9, 2025",
+      venue: "Indoor Sports Complex",
+      image: "/images/sepaktakraw.jpeg",
+      teamSize: "4 players (Quad event)",
+      prizePool: "₹5,000",
+      schedule: "10:00 AM",
+      description: "Experience the exciting sport of Sepak Takraw, a unique combination of volleyball and football that requires agility, coordination, and technical skill in this competitive tournament.",
+      rules: [
+        "Quad event (4 players per team)",
+        "League matches will be conducted",
+        "15 points per game",
+        "Best of 3 sets",
+        "Referee decision is final"
+      ],
+      registrationClosed: true
     }
 ];
 
@@ -277,6 +297,11 @@ export default function IndiviEvent() {
                 Register Now
                 <Share2 size={18} />
               </a>
+            ) : event.registrationClosed ? (
+              <span style={{ color: 'inherit', textDecoration: 'none' }}>
+                Registration Closed
+                <Share2 size={18} />
+              </span>
             ) : (
               <>
                 Register Now

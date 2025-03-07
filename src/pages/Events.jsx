@@ -54,6 +54,14 @@ const eventsData = [
     date: "March 8-9, 2025",
     venue: "Indoor Sports Complex",
     image: "/images/badminton.jpg"
+  },
+  {
+    id: 8,
+    name: "Sepak Takraw",
+    details: "Traditional Southeast Asian sport combining elements of volleyball, football, and martial arts.",
+    date: "March 8-9, 2025",
+    venue: "Indoor Sports Complex",
+    image: "/images/sepaktakraw.jpeg"
   }
 ];
 
